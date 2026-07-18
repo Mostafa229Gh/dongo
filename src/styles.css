@@ -61,3 +61,25 @@ body {
     #f5f7fb;
 }
 
+button, input { font: inherit; }
+
+button {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+input[type=range] { direction: ltr; }
+
+input:focus-visible, button:focus-visible {
+  outline: 3px solid rgba(67, 97, 238, .38);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    transition-duration: .01ms !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
