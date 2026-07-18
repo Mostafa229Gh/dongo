@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Estedad;
+  color: #172033;
+  background: #f5f7fb;
+  font-synthesis: none;
+}
+
+* { box-sizing: border-box; }
+
+/* Regular */
+@font-face {
+  font-family: "Estedad";
+  src: url("assets/fonts/Estedad-FD-Regular.woff2")
+    format("woff2");
+
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Medium */
+@font-face {
+  font-family: "Estedad";
+  src: url("assets/fonts/Estedad-FD-Medium.woff2")
+    format("woff2");
+
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Bold */
+@font-face {
+  font-family: "Estedad";
+  src: url("assets/fonts/Estedad-FD-Bold.woff2")
+    format("woff2");
+
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* ExtraBold */
+@font-face {
+  font-family: "Estedad";
+  src: url("assets/fonts/Estedad-FD-ExtraBold.woff2")
+    format("woff2");
+
+  font-weight: 800;
+  font-style: normal;
+}
+
+html { background: #f5f7fb; }
+
+body {
+  min-width: 320px;
+  margin: 0;
+  background:
+    radial-gradient(circle at 100% -5%, rgba(67, 97, 238, .10), transparent 30rem),
+    #f5f7fb;
+}
+
